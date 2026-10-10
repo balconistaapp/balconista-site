@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Marca do Balconista: etiqueta verde arredondada com o B branco (mesma do topo do site e do painel) -->
-  <rect x="2" y="5" width="60" height="57" rx="15" fill="#0E7A40"/>
-  <rect x="2" y="2" width="60" height="57" rx="15" fill="#128C4A"/>
-  <path fill="#FFFFFF" fill-rule="evenodd" d="M19 13H35.2C42.4 13 46.6 16.6 46.6 22.4C46.6 26.2 44.6 28.9 41.4 30.1C45.4 31.2 48 34.4 48 39C48 45.9 43.3 50.2 35.6 50.2H19ZM28.2 20.4V27.8H34.2C36.8 27.8 38.1 26.5 38.1 24.1C38.1 21.7 36.8 20.4 34.2 20.4ZM28.2 34.6V42.8H35.2C38.1 42.8 39.6 41.4 39.6 38.7C39.6 36 38.1 34.6 35.2 34.6Z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M8 2h16a6 6 0 0 1 6 6v12a6 6 0 0 1-6 6H12l-6.2 4.6A1 1 0 0 1 4 29.8V26.4A6 6 0 0 1 2 22V8a6 6 0 0 1 6-6Z" fill="#9EFF72"/><rect x="9" y="7.5" width="3.4" height="13.5" rx="1.7" fill="#080A09"/><circle cx="17.2" cy="16.2" r="4.4" fill="none" stroke="#080A09" stroke-width="3.4"/></svg>
