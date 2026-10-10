@@ -24,6 +24,12 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
 
+# Fontes da página (Geist), hospedadas aqui mesmo: também 1 dia no navegador
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
 # Endereços antigos que alguém possa ter salvo
 [[redirects]]
   from = "/entrar"

@@ -7,8 +7,10 @@ Este repositório é **só a página de vendas** (balconista.app.br). O sistema 
 | Arquivo | O que é |
 |---|---|
 | `index.html` | A página inteira: textos, seções, planos, perguntas frequentes e o estilo (CSS no `<style>` do topo) |
-| `js/site.js` | Os botões e as animações. No começo (`CONFIG`) ficam os endereços do painel |
-| `img/` | Imagens da página |
+| `js/site.js` | Os botões, o robô de demonstração e as animações. No começo (`CONFIG`) ficam os endereços do painel |
+| `img/` | Imagens da página (`og.png` é a imagem que aparece ao compartilhar o link) |
+| `fonts/` | Fontes Geist, hospedadas aqui mesmo (a página não usa o Google Fonts) |
+| `Abrir landing.bat` | Atalho para Windows: abre a página no seu computador com dois cliques |
 | `favicon.*`, `apple-touch-icon.png`, `icon-*.png` | Ícones da aba do navegador e do celular |
 | `netlify.toml` | Publicação e regras de segurança. Mexa só com ajuda |
 | `robots.txt`, `sitemap.xml` | Para o Google achar a página |
@@ -31,6 +33,18 @@ npx serve .
 ```
 
 Depois abra o endereço que aparecer (normalmente http://localhost:3000).
+
+No Windows, também dá para dar dois cliques em **`Abrir landing.bat`**: ele sobe a página em http://127.0.0.1:8767 e abre o navegador (precisa do Python instalado). Para parar, feche a janela preta.
+
+## O que se mexe na página (tudo em `js/site.js`)
+
+- **Topo:** conversas de vários negócios rolando ao fundo (`WALL`), celular e painel que seguem o mouse, e a conversa do celular em loop (`HERO`).
+- **Tour de 30 segundos:** o "vídeo" do produto, feito com animação da própria página (não é YouTube, então não precisa liberar nada).
+- **Demonstração** com 3 tipos de negócio (`SCENARIOS`) e **robô de demonstração** (botão no canto): conversa de verdade no navegador, sem enviar nada. O cardápio, os serviços e os horários do robô ficam em `MENU`, `SERVICES` e `PROS`.
+- **Painel ao vivo:** simulação com dados fictícios, com pausar e acelerar.
+- **Recursos clicáveis:** promoção, cupom, agenda, ordem de serviço e permissões.
+
+Tudo o que é simulação está marcado na página como exemplo ou dado fictício. Quem usa "reduzir movimento" no aparelho vê tudo parado e completo, e as animações pausam quando saem da tela.
 
 ## Cuidados
 
