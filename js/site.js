@@ -1,5 +1,11 @@
 'use strict';
 /* Página de vendas do Balconista: botões, links e animações. Os endereços do painel ficam em CONFIG, logo abaixo. */
+
+// Qual painel usar: a página de teste (site.…sslip.io) e o computador de quem edita (localhost) usam o painel de TESTE,
+// para ninguém criar conta de verdade enquanto testa. Em balconista.app.br, o painel de verdade.
+const TESTE = /(^|\.)sslip\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
+const PAINEL = TESTE ? 'https://179-236-243-185.sslip.io' : 'https://painel.balconista.app.br';
+
 // ===== Configuração: troque aqui =====
 const CONFIG = {
   brand: 'Balconista',            // nome do produto
@@ -7,9 +13,9 @@ const CONFIG = {
   checkoutLinks: {                // links de assinatura do Asaas/Stripe para cada plano (quando estiverem criados)
     Starter: '', Growth: '', Pro: '',
   },
-  termsUrl: 'https://painel.balconista.app.br/termos', privacyUrl: 'https://painel.balconista.app.br/privacidade',
-  loginUrl: 'https://painel.balconista.app.br/entrar',            // endereço da tela de login do painel (quem já é cliente)
-  signupUrl: 'https://painel.balconista.app.br/criar-conta',      // página onde o cliente cria a conta e começa o teste (vazio = usa os links acima ou o WhatsApp)
+  termsUrl: `${PAINEL}/termos`, privacyUrl: `${PAINEL}/privacidade`,
+  loginUrl: `${PAINEL}/entrar`,            // tela de login do painel (quem já é cliente)
+  signupUrl: `${PAINEL}/criar-conta`,      // onde o cliente cria a conta e começa o teste (vazio = usa os links acima ou o WhatsApp)
 };
 
 // Nome do produto em todos os lugares
