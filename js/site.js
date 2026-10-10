@@ -2,12 +2,18 @@
 
 /* Página de vendas do Balconista: botões, links, robô de demonstração e animações.
    Os endereços do painel ficam em CONFIG, logo abaixo. */
+
+// Qual painel usar: a página de teste (site.…sslip.io) e o computador de quem edita (localhost, 127.0.0.1) usam o painel
+// de TESTE, para ninguém criar conta de verdade enquanto testa. Em balconista.app.br, o painel de verdade.
+const TESTE = /(^|\.)sslip\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
+const PAINEL = TESTE ? 'https://179-236-243-185.sslip.io' : 'https://painel.balconista.app.br';
+
 // ===== Configuração: troque aqui =====
 const CONFIG = {
-  signupUrl: 'https://painel.balconista.app.br/criar-conta', // criar conta e começar o teste. O plano vai em ?plano=starter|growth|pro
-  loginUrl: 'https://painel.balconista.app.br/entrar',       // tela de login do painel (quem já é cliente)
-  termsUrl: 'https://painel.balconista.app.br/termos',
-  privacyUrl: 'https://painel.balconista.app.br/privacidade',
+  signupUrl: `${PAINEL}/criar-conta`, // criar conta e começar o teste. O plano vai em ?plano=starter|growth|pro
+  loginUrl: `${PAINEL}/entrar`,       // tela de login do painel (quem já é cliente)
+  termsUrl: `${PAINEL}/termos`,
+  privacyUrl: `${PAINEL}/privacidade`,
   salesWhatsApp: '',              // WhatsApp de vendas com DDI e DDD, só números. Ex.: '5547999990000'. Vazio = botões de contato escondidos
   // Depoimentos REAIS, com autorização do cliente. Vazio = bloco escondido.
   // Ex.: { quote: 'Texto do cliente', name: 'Nome', business: 'Negócio', city: 'Cidade/UF' }
