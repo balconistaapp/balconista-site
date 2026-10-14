@@ -1,0 +1,32 @@
+/* Termos de Uso e Política de Privacidade (/termos/ e /privacidade/). Usa as variáveis de css/site.css. */
+
+.legal { padding-top: clamp(112px, 12vw, 152px); }
+.legal__crumb { display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; color: var(--ink-soft); margin-bottom: 28px; }
+.legal__crumb a { color: var(--ink-soft); }
+.legal__crumb a:hover { color: var(--forest); }
+
+.legal-doc { max-width: 78ch; font-size: 17px; line-height: 1.7; color: var(--ink); }
+.legal-doc h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 650; letter-spacing: -.04em; line-height: 1.1; margin-bottom: 14px; }
+.legal-doc h2 { font-size: clamp(1.25rem, 2vw, 1.55rem); font-weight: 650; letter-spacing: -.025em; line-height: 1.25; margin: 44px 0 14px; scroll-margin-top: 96px; }
+.legal-doc p { margin-top: 14px; color: var(--ink-soft); }
+.legal-doc p:first-of-type { color: var(--ink); }
+.legal-doc strong { color: var(--ink); font-weight: 650; }
+.legal-doc ul { display: grid; gap: 12px; margin-top: 14px; padding-left: 22px; list-style: disc; color: var(--ink-soft); }
+.legal-doc ul ul { margin-top: 8px; list-style: circle; }
+.legal-doc li::marker { color: var(--forest); }
+.legal-doc a { color: var(--forest); text-underline-offset: 3px; }
+.legal-doc hr { border: 0; border-top: 1px solid rgba(8, 10, 9, .14); margin: 40px 0; }
+
+.legal-doc .lg-table { overflow-x: auto; margin-top: 16px; border: 1px solid rgba(8, 10, 9, .14); border-radius: 16px; }
+.legal-doc table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5; }
+.legal-doc th, .legal-doc td { text-align: left; vertical-align: top; padding: 14px 16px; border-bottom: 1px solid rgba(8, 10, 9, .1); }
+.legal-doc th { background: var(--paper-2); font-weight: 650; color: var(--ink); }
+.legal-doc tr:last-child td { border-bottom: 0; }
+.legal-doc td { color: var(--ink-soft); }
+
+.legal__next { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 56px; }
+
+@media (max-width: 640px) {
+  .legal-doc { font-size: 16px; }
+  .legal__next .btn { width: 100%; }
+}

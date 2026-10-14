@@ -1,4 +1,8 @@
+# robots.txt de balconista.app.br
+# Site público de vendas: tudo pode ser rastreado, inclusive /css/ e /js/
+# (o Google precisa deles para renderizar a página).
 User-agent: *
 Allow: /
 
+# Mapa do site, com a página principal e as páginas por segmento.
 Sitemap: https://balconista.app.br/sitemap.xml
