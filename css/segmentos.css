@@ -1,0 +1,81 @@
+/* Páginas por tipo de negócio (/whatsapp-para-…/). Usa as variáveis e o visual de css/site.css. */
+
+.seg-hero { padding: 132px 0 88px; }
+.seg-hero .hero__grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); }
+.seg-hero h1.display { font-size: clamp(2.3rem, 4.2vw, 4.4rem); }
+
+.seg-crumb { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; font-size: 14px; color: var(--mute); }
+.seg-crumb a { color: var(--mute); text-decoration: none; }
+.seg-crumb a:hover { color: var(--volt); }
+
+/* celular do hero (estático, sem animação) */
+.seg-phone { margin: 0; justify-self: center; width: min(100%, 360px); display: grid; gap: 12px; }
+.seg-phone__top, .seg-phone__chat { background: var(--graphite); border: 1px solid var(--line-2); }
+.seg-phone__top { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 24px 24px 0 0; margin-bottom: -12px; }
+.seg-phone__top b { display: block; font-size: 15px; font-weight: 600; letter-spacing: -.01em; }
+.seg-phone__top small { color: var(--volt); font-size: 12px; }
+.seg-phone__av { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: var(--forest-2); color: var(--volt); font-weight: 650; }
+.seg-phone__chat { display: flex; flex-direction: column; gap: 10px; padding: 18px 16px 22px; border-radius: 0 0 24px 24px; border-top: 0; box-shadow: 0 40px 80px -40px rgba(0, 0, 0, .8); }
+.seg-phone .msg { animation: none; max-width: 86%; font-size: 14.5px; line-height: 1.4; }
+.seg-phone .note { text-align: center; }
+
+/* dores */
+.seg-dores { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.seg-dor { display: grid; gap: 14px; align-content: start; padding: 24px; border-radius: 22px; background: var(--graphite); border: 1px solid var(--line); }
+.seg-dor .ico { width: 26px; height: 26px; color: #FF8A7A; }
+.seg-dor h3 { font-size: 18px; font-weight: 600; letter-spacing: -.02em; line-height: 1.25; }
+.seg-dor p { margin-top: 6px; font-size: 15px; line-height: 1.5; color: var(--mute); }
+
+/* solução + painel de exemplo */
+.seg-sol { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(32px, 5vw, 88px); align-items: start; }
+.seg-sol__copy { display: grid; gap: 22px; }
+.seg-ticks { display: grid; gap: 14px; margin-top: 6px; }
+.seg-mock { position: sticky; top: 110px; padding: clamp(20px, 3vw, 32px); border-radius: 28px; background: var(--ink); color: var(--paper); color-scheme: dark; display: grid; gap: 18px; box-shadow: 0 40px 90px -50px rgba(0, 0, 0, .7); }
+.seg-mock__t { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; font-size: 16px; }
+.seg-mock__t .mono { font-size: 11px; color: var(--mute); }
+.seg-mock ul { display: grid; gap: 8px; }
+.seg-mock li { display: grid; grid-template-columns: 54px minmax(0, 1fr) auto auto; gap: 12px; align-items: center; padding: 14px; border-radius: 14px; background: var(--graphite-2); font-size: 14.5px; }
+.seg-mock li .mono { color: var(--mute); font-size: 12.5px; }
+.seg-mock__mid { color: var(--mute); font-size: 13px; }
+.seg-mock .st { padding: 4px 10px; border-radius: 99px; background: var(--volt-dim); color: var(--volt); font-size: 12px; font-weight: 600; white-space: nowrap; }
+
+/* passos */
+.seg-passos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; counter-reset: p; }
+.seg-passo { display: grid; gap: 10px; align-content: start; padding: 24px; border-radius: 22px; border: 1px solid var(--line-2); background: var(--graphite); }
+.seg-passo .mono { color: var(--volt); font-size: 13px; letter-spacing: .1em; }
+.seg-passo h3 { font-size: 18px; font-weight: 600; letter-spacing: -.02em; line-height: 1.25; }
+.seg-passo p { font-size: 15px; line-height: 1.5; color: var(--mute); }
+
+/* plano */
+.seg-plano { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(28px, 5vw, 80px); align-items: center; }
+.seg-plano > div:first-child { display: grid; gap: 20px; }
+.seg-plano .lead b { color: var(--paper); }
+.seg-plano__cta { display: grid; gap: 22px; justify-items: start; }
+.seg-plano .terms-row { justify-content: flex-start; margin-top: 0; color: var(--mute); }
+.seg-plano .terms-row .ico { color: var(--volt); }
+
+/* faq */
+.seg-faq .h2 { max-width: 14ch; }
+
+/* outros segmentos */
+.seg-outros { padding-block: clamp(64px, 8vw, 112px); }
+.seg-outros__lista { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.seg-outro { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 20px; border-radius: 99px; border: 1px solid rgba(8, 10, 9, .2); text-decoration: none; font-weight: 600; transition: border-color .25s, background-color .25s; }
+.seg-outro:hover { border-color: var(--ink); background: var(--paper-2); }
+.seg-outro .ico { width: 16px; height: 16px; }
+
+@media (max-width: 1180px) {
+  .seg-dores, .seg-passos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 1024px) {
+  .seg-hero .hero__grid, .seg-sol, .seg-plano { grid-template-columns: 1fr; }
+  .seg-mock { position: static; }
+  .seg-phone { margin-top: 12px; }
+}
+@media (max-width: 640px) {
+  .seg-hero { padding: 112px 0 64px; }
+  .seg-dores, .seg-passos { grid-template-columns: 1fr; }
+  .seg-mock li { grid-template-columns: 48px minmax(0, 1fr) auto; }
+  .seg-mock__mid { display: none; }
+  .seg-plano .btn, .seg-faq .btn { width: 100%; }
+}
