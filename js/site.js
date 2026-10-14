@@ -12,8 +12,8 @@ const PAINEL = TESTE ? 'https://179-236-243-185.sslip.io' : 'https://painel.balc
 const CONFIG = {
   signupUrl: `${PAINEL}/criar-conta`, // criar conta e começar o teste. O plano vai em ?plano=starter|growth|pro
   loginUrl: `${PAINEL}/entrar`,       // tela de login do painel (quem já é cliente)
-  termsUrl: "/termos/",
-  privacyUrl: "/privacidade/",
+  termsUrl: "/termos-de-uso/",
+  privacyUrl: "/politica-de-privacidade/",
   salesWhatsApp: '',              // WhatsApp de vendas com DDI e DDD, só números. Ex.: '5547999990000'. Vazio = botões de contato escondidos
   // Depoimentos REAIS, com autorização do cliente. Vazio = bloco escondido.
   // Ex.: { quote: 'Texto do cliente', name: 'Nome', business: 'Negócio', city: 'Cidade/UF' }
